@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %} {% endblock %}</title>
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <style>
+            .search-container {
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                overflow: hidden;
+            }
+            .search-input {
+                border: none;
+                padding: 10px;
+                width: 80%;
+                outline: none;
+            }
+        </style>
+
+</head>
+<body>
+     <!-- Contenedor principal -->
+    <div class="container text-center mt-5">
+      <!-- Título central y llamativo -->
+      <h2 class="display-4">Desarrollando una Aplicación Web busqueda en Tiempo Real con Flask, jQuery y AJAX</h2>
+
+        <div class="container py-3">
+            {% block body %}
+            {% endblock %}
+        </div>
+
+    </div>
+</body>
+</html>
